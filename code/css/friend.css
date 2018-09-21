@@ -1,0 +1,191 @@
+html,body {
+	margin: 0;
+	padding:0;
+}
+header {
+	height: 350px;
+	background: url(../imgs/bg.jpeg) no-repeat;
+	background-size: cover;
+	position: relative;
+}
+header .opt_box .back {
+	display: block;
+	height: 1rem;
+	width: 1rem;
+	background: url(../imgs/back.png);
+	background-size: cover;
+}
+header .opt_box button.photo {
+	background: transparent;
+	background-image: url(../imgs/photo.png);
+	background-size: cover;
+	border:none;
+	width: 1.5rem;
+	height: 1.5rem;
+}
+
+header .opt_box {
+	display: flex;
+	flex-direction: row;
+	flex-wrap:nowrap;
+	align-items: center;/****另一根轴上的对齐方式*****/
+	justify-content: space-between;/**主轴上的对齐方式***/
+	height: 2rem;
+	padding:1rem;
+}
+
+header .user-info img{
+	width: 5rem;
+	padding: 1px;
+	background: #fff;
+	border: 1px solid #EBEBEB;
+}
+header .user-info label {
+	display: inline-block;
+	transform: translateY(-3rem);
+	color: white;
+	font-family: "微软雅黑";
+	padding-right: 0.5rem;
+}
+header .user-info{
+	position:absolute;
+	bottom: -2rem;
+	right: 1rem;
+}
+/********朋友圈列表**********/
+main {
+	margin-top: 1em;
+}
+.friend-list .friend-list-item{
+	box-sizing: border-box;
+	position: relative;
+	width: 100%;
+	padding-left: 4.5rem;
+	padding-top: 1rem;
+	padding-right: 1rem;
+	padding-bottom: 1rem;
+	font-size: 0.9rem;
+	border-bottom: 1px solid #CCC;
+}
+.friend-list .friend-list-item:last-child {
+	border-bottom: none;
+}
+.friend-list-item .user-picture{
+	position: absolute;
+	left: 1rem;
+	top: 1rem;
+	width: 3rem;
+	text-align: center;
+}
+.friend-list-item .user-picture img {
+	width: 3rem;
+	height: 3rem;
+}
+
+.message-show .user-name {
+	margin: 0;
+	padding: 0;
+	font-size: .9rem;
+	letter-spacing: 0.1rem;
+	font-weight: normal;
+	color: #0a5987;
+}
+
+.message-show .message-text {
+	font-size: 0.9rem;
+	max-height: 5rem;
+	line-height: 1.20rem;
+	text-align: justify;
+	overflow: hidden;
+}
+
+.message-show .full-text {
+	font-size: 0.9rem;
+	text-decoration: none;
+	color: #0a5987;
+}
+
+.message-show .message-img  {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 325px;
+}
+.message-img  .image-item {
+	box-sizing: border-box;
+	width: 100px;
+	height: 100px;
+	margin-right:8px ;
+	margin-top: 8px;
+	overflow: hidden;
+}
+.message-show .message-img img {
+	box-sizing: border-box;
+	/*width: 100%;*/
+	height: 100px;
+}
+
+.message-show .info-opt {
+	font-size: 0.5rem;
+	font-style: normal;
+	position: relative;
+}
+.message-show .info-opt * {
+	display: block;
+	margin-top:0.5em ;
+}
+.message-show .info-opt address{
+	font-style: normal;
+	min-height: 1em;
+	color: #0a5987;
+}
+
+.message-show .info-opt time {
+	color: #666;
+}
+
+.message-show .info-opt .opt {
+	width: 1.8rem;
+	height: 1.20rem;
+	background: url(../imgs/pinglun.png) no-repeat;
+	background-size: cover;
+	position: absolute;
+	right: 0.5rem;
+	top: 0.5rem;
+}
+.pinglun-list {
+	margin-top: 1.5rem;
+	margin-left: -3.5rem;
+}
+.pinglun-list .top-arrow {
+	width: 0;
+	border-bottom: 10px solid #eeeeee;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	margin-left: 1rem;
+}
+.pinglun-list .zan-box {
+	height: 1.5rem;
+	border-bottom: 1px solid #DBDBDB;
+	background:#EEEEEE url(../imgs/f/hart.png) no-repeat;
+	background-size: 1rem 1.1rem;
+	background-position: 0.5rem 50%;
+	padding-left: 2rem;
+	border-bottom: 1px solid #D7D7D7;
+	font-size: 0.9rem;
+	line-height: 1.5rem;
+	color: #0A5987;
+}
+.pinglun-list .zan-box span:after{
+	content: ",";
+}
+.pinglun-list .zan-box span:last-child:after {
+	content: "";
+}
+.pinglun-list .pinglun-box {
+	background: #EEE;
+	padding: 0.5rem;
+}
+.pinglun-list .pinglun-box span {
+	color: #0A5987;
+}

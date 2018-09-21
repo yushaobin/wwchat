@@ -1,0 +1,60 @@
+.chat header {
+	padding: 0 0.5rem;
+}
+footer.chat-box {
+	min-height: 3rem;
+	width: 100%;
+	background: #fcfcfc;
+	border-top: 1px solid #d9d9d9;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+
+}
+.chat .chat-user {
+	padding-left: 1.5rem;
+	background: url(../imgs/return.png) no-repeat;
+	background-size: auto 1.2rem;
+	background-position: 0 65%;
+}
+
+.chat-box {
+	position: relative;
+	box-sizing: border-box;
+	padding-left: 3rem;
+	padding-right: 5rem;
+}
+
+.chat-box .image-box {
+	position: absolute;
+	top: 0.5rem;
+}
+
+.chat-box .image-box.left {
+	left: .5rem;
+}
+.chat-box .image-box.right{
+	right: .5rem;
+} 
+.chat-box .image-box img {
+	width: 2rem;
+}
+.chat-box .message-box {
+	height: 3rem;
+	line-height: 3rem;
+}
+.chat-box input {
+	border:none;
+	outline: none;
+	border-bottom: 1px solid #CCCCCC;
+	font-size: 1rem;
+	height: 1.2rem;
+	width: 100%;
+}
+
+/***********聊天列表************/
+.chat-list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}

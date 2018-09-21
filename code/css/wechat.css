@@ -1,0 +1,39 @@
+.user-list {
+	list-style: none;
+	padding: 0;
+}
+
+.user-list .item {
+	margin-top: 0.6rem;
+	position: relative;
+}
+.user-list .item h1{
+	font-size: 1rem;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+}
+.user-list .item p {
+	padding: 0px;
+	margin: 0px;
+}
+.user-list .item p , .user-list .item .right {
+	font-size: 0.7rem;
+	color: #747474;
+}
+.user-list .item .left {
+	position: absolute;
+	top: 0;
+	left: 1rem;
+}
+.user-list .item .left img{
+	width: 3rem;
+}
+.user-list .item .center {
+	padding-left: 4.5rem;
+}
+.user-list .item .right{
+	position: absolute;
+	right: 1rem;
+	top: 0;
+}
